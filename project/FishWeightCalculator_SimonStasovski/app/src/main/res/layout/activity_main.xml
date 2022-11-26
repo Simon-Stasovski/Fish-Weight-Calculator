@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Buttons_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="0dp"
+        android:background="#00BCD4">
+
+        <Button
+            android:id="@+id/freshWaterFishFragment_Button"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4CAF50"
+            android:text="Fresh Water"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/saltWaterFishFragment_Button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="48dp"
+            tools:layout_conversion_absoluteWidth="206dp" />
+
+        <Button
+            android:id="@+id/saltWaterFishFragment_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Salt Water"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/freshWaterFishFragment_Button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/calculator_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription='"display fragments"'
+        android:scrollbarStyle="insideOverlay" />
+
+</LinearLayout>
